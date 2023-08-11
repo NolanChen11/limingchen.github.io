@@ -1,0 +1,194 @@
+*{
+    background-color: rgb(255, 255, 255);
+    
+}
+
+/* -----------------------header---------------------- */
+header{
+    width: 100%;
+    text-align: center;
+}
+
+.logoWrapper{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top:0%;
+    padding-bottom: 0%;
+    padding-left: 10%;
+    padding-right: 10%;
+    /* padding: 40px; */
+    background-color: transparent;
+    max-width: 100%;
+}
+
+.secondLogoWrapper{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 40px;
+    background-color: transparent;
+    max-width: 100%;
+}
+
+.logo{
+    background-color:  transparent;
+    width:auto;
+    height:20%;
+    max-width: 100%;
+}
+.secondLogo{
+    background-color: transparent;
+    width:auto;
+    height:5%;
+    display:inline-flex;
+    
+}
+
+
+/* -----------------------About---------------------- */
+.introWrapper{
+    /* border: 1px dashed grey; */
+    text-align: center;
+    /* margin: 20px; */
+}
+.intro{
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: medium;
+    line-height: 3ch;
+    text-align: center;
+    width: 50%;
+    height: 30%;
+    display:inline-block;
+}
+
+.mainSeperater{
+    border: 1px dashed grey;
+    /* margin-bottom: 10%; */
+}
+
+.script{
+    
+    display:inline-flex;
+    align-items: center;
+}
+/* -----------------------Portfolio---------------------- */
+
+.cover{
+    /* background: #949090; */
+    position: relative;
+    display:inline-flex;
+    align-items: center;
+    text-align: center;
+    object-fit: cover;
+    width:33%;
+    height:400px;
+    
+    /* min-width: 200px; */
+}
+
+.cover img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    /* line-height: 30%; */
+    display:inline-block;
+    object-fit: cover;
+    opacity: 1;
+}
+
+/* -----------------------Project Title---------------------- */
+.inBlockTitle{
+    left: 0;
+    position:absolute;
+    text-align:center;
+    top: 45%;
+    width: 100%;
+    background: transparent;
+    opacity: 1;
+    color:white;
+    font-size: 30px;
+    
+}
+/* -----------------------Project Title & Text---------------------- */
+.top-left{
+    left:0;
+    position: absolute;
+    text-align:left;
+    top:0;
+    width:100%;
+    background: transparent;
+    opacity: 1;
+    color:white;
+    font-size: 20px;
+}
+.top-right{
+    right:3%;
+    position: absolute;
+    text-align:right;
+    top:0;
+    width:10%;
+    background: transparent;
+    opacity: 1;
+    color:white;
+    font-size: 40px;
+}
+.top-right:hover{
+    color:red;
+}
+.bottom-left{
+    left:0;
+    position: absolute;
+    text-align:left;
+    bottom:0%;
+    width:100%;
+    background: transparent;
+    opacity: 1;
+    color:white;
+    font-size: 20px;
+}
+.bottom-right{
+    right:0;
+    position: absolute;
+    text-align:right;
+    bottom:0%;
+    width:100%;
+    background: transparent;
+    opacity: 1;
+    color:white;
+    font-size: 20px;
+}
+
+
+
+
+
+
+.titleWrapper{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    transition: .3s ease;
+    background-color: black;
+}
+
+.cover img:hover{
+    transition: 0.3s ease-in-out;
+    opacity: 0.5;
+}
+
+.cover:hover .titleWrapper{
+    opacity: 0.6;
+}
+
+

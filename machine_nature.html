@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="./p5.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="secondStyles.css" />
+    <title>Liming Chen</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <div class="secondLogoWrapper">
+                <img class="secondLogo" src="./images/logo.PNG">
+            </div>
+
+        </a>
+    </header>
+    <hr>
+    <section class="projectName">
+        <h1>
+            Individual Project: Machine-Learned Nature
+        </h1>
+
+    </section>
+
+
+    <section class="gallery">
+
+        <p class="text">
+            Machine-Learned Nature is an on-going project that aims to use machine learning models as a medium of
+            information, converting one's surrounding nature into an artistic and digital representation.
+            <br>
+            <br>
+            Rather than training the model on large datasets, using customized datasets might provide models that
+            are more relevant to individuals. Thus, developing a workflow that allows one to easily collect data and
+            train the model is an important topic of this project.
+            <br>
+            <br>
+            For the installation I created for my Studio Art capstone project, I trained a pix2pix translation model
+            using conditional GAN on the pictures of nature I took around my living place.
+            <br>
+            <br>
+        </p>
+        <img src="images/cover_machine_learned_nature.png" alt="" class="inTextImage">
+        <p class="text">
+            
+            <br>
+            <br>
+            To increase the number of instances, I divided the images into uniform smaller segments. Subsequently,
+            employing morphological transformations and edge detection techniques, I generated processed images
+            (labels) and retained the original cropped images as attributes within my dataset.
+            <br>
+            <br>
+        </p>
+
+        <img src="images/machine_learned_nature_dataIllustration.png" alt="my datasets look like this"
+            class="inTextImage" style="max-width: 60%; text-align: center;">
+
+        <br>
+        <br>
+        <p class="text">
+            The trained model can translate the black and white input to colorful "nature style". Thus, I programed
+            some moving patterns in Processing, which represent the instances in my dataset --- stones, clouds,
+            grass, branches, then applied the model to the pattern.
+        </p>
+        <br>
+        <br>
+        <img src="images/machine_learned_nature_results.png" alt="" class = "inTextImage">
+        <br>
+        <br>
+
+    </section>
+
+
+
+    <br>
+    <br>
+
+
+
+</body>
+
+</html>
+
