@@ -36,7 +36,10 @@
             two existing adjacent frames. In our work, we constructed a conditional generative adversarial network
             (CGAN) to
             train our model using PyTorch and trained an Autoencoder using
-            TensorFlow. Our customized data loader class reads three sequential frames in the video as one instance,
+            TensorFlow, and I was responsible for training GANs and their training framework. 
+            <br>
+            <br>
+            Our customized data loader class reads three sequential frames in the video as one instance,
             f(n-1), f(n) and f(n+1), while all of the 3 frames are numpy arrays with a shape of width, height, RGB
             values (256 * 256 * 3). Our data loader transforms f(n) to a (3 * 256 *256) tensor as the label. Then, It
             combines and transforms f(n-1) and f(n+1) to a (6 * 256 * 256) tensor as the attributes.
@@ -55,6 +58,9 @@
             intermediate frames between every pair of existing frames, we loaded the saved generator parameters. By inputting
             combined (6 * 256 * 256) tensors of f(n) and f(n+1), the generator can predict the intermediate frames
             between f(n) and f(n+1).
+            <br>
+            <br>
+            The result was not ideal, while the model successfully predicted the general features of intermediate frames.
 
 
 

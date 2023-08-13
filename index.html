@@ -9,13 +9,27 @@
 </head>
 
 <body>
+    <script>
+        function scrollFunction() {
+          window.scroll(0, findPosition(document.getElementById("portfolio")));
+        }
+        function findPosition(obj) {
+          var currenttop = 0;
+          if (obj.offsetParent) {
+            do {
+              currenttop += obj.offsetTop;
+            } while ((obj = obj.offsetParent));
+            return [currenttop];
+          }
+        }
+    </script>
     <header>
         <div class = "banner">
             <div class = "bannerSection">
                 <span> about </span>
             </div>
-            <div class = "bannerSection">
-                <span> about </span>
+            <div class = "bannerSection" onclick="scrollFunction()">
+                <span > projects </span>
             </div>
             <div class = "bannerSection">
                 <span> about </span>
@@ -46,7 +60,7 @@
     
     <!-- <hr class = "mainSeperater"> -->
     <div class = "script" id="sketch-holder">
-        <script src="sketch.js"></script> 
+        <script src="./sketch.js"></script> 
     </div>
     
 
@@ -55,7 +69,7 @@
     
 
     <section class="projectName">
-        <h1>
+        <h1 id = "portfolio">
             Projects
         </h1>
 

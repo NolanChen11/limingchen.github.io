@@ -21,6 +21,7 @@ header{
     display:flex;
     float:right;
     width:10%;
+    cursor: pointer;
 }
 
 
