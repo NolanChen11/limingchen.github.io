@@ -227,14 +227,13 @@ header{
     margin-bottom: 2%;
     margin-left: 5%;
     margin-right: 50%;
-    padding: 0;
     background-color: transparent;
     max-width: 100%;
     
 }
 .secondLogo{
     background-color: transparent;
-    width: 100%;
+    width: 70%;
     
 }
 .projectName{
@@ -255,7 +254,7 @@ header{
 
 .text{
     display:inline-block;
-    width: 60%;
+    width: 50%;
     text-align: left;
 }
 .inTextImage{
@@ -263,9 +262,21 @@ header{
     width:60%;
     height:auto;
     text-align: center;
+    vertical-align: center;
+    display:inline-flex;
 }
+.inTextImageSmall{
+    max-width: 60%;
+    width:40%;
+    height:auto;
+    text-align: center;
+    vertical-align: center;
+    display:inline-flex;
+}
+
 .list{
     display:inline-block;
     width: 50%;
     text-align: left;
 }
+

@@ -43,32 +43,37 @@
             using conditional GAN on the pictures of nature I took around my living place.
             <br>
             <br>
+
         </p>
-        <img src="images/cover_machine_learned_nature.png" alt="" class="inTextImage">
+        <img src="images/cover_machine_learned_nature.png" alt="" style=" max-width: 60%;
+        width:60%;
+        height:auto;
+        text-align: center;
+        vertical-align: center;
+        display:inline-flex;">
         <p class="text">
-            
+
             <br>
             <br>
             To increase the number of instances, I divided the images into uniform smaller segments. Subsequently,
             employing morphological transformations and edge detection techniques, I generated processed images
-            (labels) and retained the original cropped images as attributes within my dataset.
+            (labels) and retained the original cropped images as attributes within my dataset. Here are some examples of traning data.
             <br>
             <br>
         </p>
-
-        <img src="images/machine_learned_nature_dataIllustration.png" alt="my datasets look like this"
-            class="inTextImage" style="max-width: 60%; text-align: center;">
+        <br>
+        <img src="images/machine_learned_nature_dataIllustration.png" alt="part of my datasets" class = "inTextImageSmall">
 
         <br>
         <br>
         <p class="text">
             The trained model can translate the black and white input to colorful "nature style". Thus, I programed
-            some moving patterns in Processing, which represent the instances in my dataset --- stones, clouds,
-            grass, branches, then applied the model to the pattern.
+            some moving patterns in Processing, which represents the instances in my dataset --- stones, clouds,
+            grass, branches. Then, I input the patterns to the model to get the final outcomes.
         </p>
         <br>
         <br>
-        <img src="images/machine_learned_nature_results.png" alt="" class = "inTextImage">
+        <img src="images/machine_learned_nature_results.png" alt="" class="inTextImageSmall">
         <br>
         <br>
 
@@ -84,4 +89,3 @@
 </body>
 
 </html>
-
