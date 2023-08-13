@@ -1,7 +1,15 @@
-*{
-    background-color: rgb(255, 255, 255);
-    
+
+
+
+
+.mainCanvas{
+    background-color: rgb(225, 225, 225);
 }
+
+
+
+
+
 
 /* -----------------------header---------------------- */
 header{

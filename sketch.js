@@ -38,9 +38,8 @@ function draw() {
     image(treeGraphic, 0, 0);
     ellipse(mouseX, mouseY, 30,30);
     
-    fill(50);
-    textSize(15);
-    textAlign(CENTER);
+    //fill(50);
+    
     //text("Let's plant some trees on my website!", width/2, 30);
     //text(`velocity: ${s.isDead}`, 10, 60);
     
@@ -50,6 +49,10 @@ function draw() {
         console.log("enter");
         s.addPower();
         indicator.activate = true;
+    }else{
+        textSize(15);
+        textAlign(CENTER);
+        text("Press and Hold!", mouseX,mouseY+40);
     }
     imageMode(CORNER);
     s.runSeed();
@@ -61,23 +64,19 @@ function draw() {
         tempX = s.position.x;
         s = new Seed(20,40);
         treeList.push(new tree(tempX));
-        // t = new tree(tempX);
     }
 
+
+    
     
     //run the system of the tree, in case there are multiple trees
     //being created at the same time.
     for(let i = 0; i < treeList.length; i++){
         treeList[i].run();
-        //check if the tree has finished. if true, remove the tree from the list. 
-        if(treeList[i].isDead()){
+        if(treeList[i].isDead()){//check if the tree has finished. if true, remove the tree from the list. 
             treeList.splice(i,1);
         }
     }
-    
-    
-    rect(0, 40, 0, height);
-
 }
 
 function mouseOnPower(){

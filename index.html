@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <script src="./p5.min.js"></script>
     <meta charset="UTF-8">
@@ -9,152 +10,189 @@
 </head>
 
 <body>
+
     <script>
-        function scrollFunction() {
-          window.scroll(0, findPosition(document.getElementById("portfolio")));
+        function scroll2Portfolio() {
+            window.scroll(0, findPosition(document.getElementById("portfolio")));
+        }
+        function scroll2About() {
+            window.scroll(0, findPosition(document.getElementById("about")));
         }
         function findPosition(obj) {
-          var currenttop = 0;
-          if (obj.offsetParent) {
-            do {
-              currenttop += obj.offsetTop;
-            } while ((obj = obj.offsetParent));
-            return [currenttop];
-          }
+            var currenttop = 0;
+            if (obj.offsetParent) {
+                do {
+                    currenttop += obj.offsetTop;
+                } while ((obj = obj.offsetParent));
+                return [currenttop];
+            }
         }
     </script>
     <header>
-        <div class = "banner">
-            <div class = "bannerSection">
-                <span> about </span>
+        <div class="banner">
+            <div class="bannerSection">
+                <span> contact </span>
             </div>
-            <div class = "bannerSection" onclick="scrollFunction()">
-                <span > projects </span>
+            <div class="bannerSection" onclick="scroll2Portfolio()">
+                <span> projects </span>
             </div>
-            <div class = "bannerSection">
+            <div class="bannerSection" onclick="scroll2About()">
                 <span> about </span>
             </div>
         </div>
     </header>
     <br>
-    <div class = "logoWrapper">
-        <img src = "./images/logo.PNG" class = "logo">
+    <div class="logoWrapper">
+        <img src="./images/logo.PNG" class="logo">
     </div>
-    <div class = "introWrapper">
-        <section class = "intro">
+    <div class="introWrapper">
+        <section class="intro">
             <div>
-                >> Hi! I'm Liming (Nolan) Chen. I'm a programmer, designer and artist.
-                <br> 
-                >> Through the use of computers as my primary tools, 
-                I craft softwares, installations, books, prints, and soundscapes that empower individuals to interpret their surroundings, 
-                form connections, and express themselves creatively.
+                >> Hi! I'm Liming (Nolan) Chen. Welcome to my website!
                 <br>
-                >> <a href = "./portfolio.html">See my works</a>, or plant some trees on my website! &#128071
+                >> I'm a programmer, designer and artist.
+                <br>
+                >> Scroll down to see my works, or plant some trees on my website! &#128071
             </div>
         </section>
     </div>
-    
-    
-    <div class = "spacer"></div>
-    
-    
-    <!-- <hr class = "mainSeperater"> -->
-    <div class = "script" id="sketch-holder">
-        <script src="./sketch.js"></script> 
+    <div class="mainCanvas">
+
+        <div class="spacer"></div>
+
+
+        <!-- <hr class = "mainSeperater"> -->
+        <div class="script" id="sketch-holder">
+            <script src="./sketch.js"></script>
+        </div>
+
+
+        <!-- <hr class = "mainSeperater"> -->
+        <br>
+
+
+        <section class="projectName">
+            <h1 id="about">
+                About Me
+            </h1>
+        </section>
+        
+        <section class = "gallery">
+            <p class="text">
+                <strong>
+                I'm a programmer, designer and artist.
+                <br>
+                <br>
+                I earned my Bachelor's degree in Computer Science and Studio Art from Oberlin College in 2023. Now, I'm
+                pursuing a Master's degree in Design Engineering at Brown University and RISD. Through the use of computers as my primary tools, I craft softwares, installations, books, prints, and soundscapes that empower individuals to interpret
+                their surroundings, form connections, and express themselves creatively.
+                <br>
+                <br>
+                My skills include:
+            </strong>
+                <ul class = "list">
+                    <li><strong>Human-Computer Interaction</strong></li>
+                    <li><strong>Machine Learning </strong> (PyTorch, TensorFlow, scikit-learn)</li>
+                    <li><strong>Computer Vision</strong> (OpenCV, scikit-image/video, Matplotlib, Tesseract, Pillow, NumPy)</li>
+                    <li><strong>Web Development</strong> (HTML/CSS/JavaScript, p5.js, ml5.js, some knowledge of Node.js, Express.js, and MongoDB)</li>
+                    <li><strong>Game Development</strong> (Unity3D, C#)</li>
+                    <li><strong>Graphic & Interaction Design</strong> (Adobe Illustrator/PhotoShop, Arduino, some knowledge of Figma)</li>
+                    <li><strong>Other Skills</strong> Python, C, C++, Java, Painting, Book Art, Sound Art, Video Editing, Basic 3D modeling in Fusion 360. </li>
+                </ul>
+            </p>
+        </section>
+        
+
+
+
+        <section class="projectName">
+            <h1 id="portfolio">
+                Projects
+            </h1>
+        </section>
+
+        <!--firsr row of portfolio-->
+        <section class="projectPhotos">
+            <a href="machine_nature.html">
+                <section class="cover">
+                    <img src="./images/cover_machine_learned_nature.png" alt="">
+                    <div class="titleWrapper"></div>
+                    <div class="inBlockTitle">Machine-Learned Nature</div>
+                    <div class="top-left">April 2023</div>
+                    <div class="top-right">&#9673</div>
+                    <div class="bottom-right">Liming Chen</div>
+
+
+                </section>
+            </a>
+            <a href="writing_with_face.html">
+                <section class="cover">
+                    <img src="./images/writing with face.jpg" alt="">
+                    <div class="titleWrapper"></div>
+                    <div class="inBlockTitle">Writing With Face</div>
+                    <div class="top-left">April 2023</div>
+                    <div class="top-right">&#9673</div>
+                    <div class="bottom-right">Liming Chen</div>
+
+                </section>
+            </a>
+            <a href="readingAids.html">
+                <section class="cover">
+                    <img src="./images/cover_crowdsourcing.png" alt="">
+                    <div class="titleWrapper"></div>
+                    <div class="inBlockTitle">Crowdsourcing Reading Aids for Narrative Text</div>
+                    <div class="top-left">April 2023</div>
+                    <div class="top-right">&#9673</div>
+                    <div class="bottom-right">Liming Chen, Yuchen Wang, Jinhan Wu</div>
+
+                </section>
+            </a>
+        </section>
+
+
+        <!--second row of portfolio-->
+        <section class="projectPhotos">
+            <a href="sound_trees.html">
+                <section class="cover">
+                    <img src="./images/sound_trees_1.png" alt="">
+                    <div class="titleWrapper"></div>
+                    <div class="inBlockTitle">Sound Trees</div>
+                    <div class="top-left">April 2023</div>
+                    <div class="top-right">&#9673</div>
+                    <div class="bottom-right">Liming Chen</div>
+
+
+                </section>
+            </a>
+            <a href="videoFrame.html">
+                <section class="cover">
+                    <img src="./images/videoFrameInterpolation.png" alt="">
+                    <div class="titleWrapper"></div>
+                    <div class="inBlockTitle">Video Frame Interpolation and Super Resolution Using Conditional GAN and
+                        Autoencoders</div>
+                    <div class="top-left">April 2023</div>
+                    <div class="top-right">&#9673</div>
+                    <div class="bottom-right">Liming Chen, Benjamin Rapkin, Xuhang Cao</div>
+
+                </section>
+            </a>
+            <a href="index.html">
+                <section class="cover">
+                    <img src="./images/story_archive1.png" alt="">
+                    <div class="titleWrapper"></div>
+                    <div class="inBlockTitle">story_book</div>
+                    <div class="top-left">April 2023</div>
+                    <div class="top-right">&#9673</div>
+                    <div class="bottom-right">Liming Chen</div>
+                </section>
+            </a>
+        </section>
+
+        <br>
+        <hr class="mainSeperater">
+        <br>
+
     </div>
-    
-
-    <!-- <hr class = "mainSeperater"> -->
-    <br>
-    
-
-    <section class="projectName">
-        <h1 id = "portfolio">
-            Projects
-        </h1>
-
-    </section>
-
-    <!--firsr row of portfolio-->
-    <section class="projectPhotos">
-        <a href = "machine_nature.html">
-            <section class = "cover">
-                <img src="./images/cover_machine_learned_nature.png" alt="">
-                <div class = "titleWrapper"></div>
-                <div class = "inBlockTitle">Machine-Learned Nature</div>
-                <div class = "top-left">April 2023</div>
-                <div class = "top-right">&#9673</div>
-                <div class = "bottom-right">Liming Chen</div>
-                
-                
-            </section>
-        </a>
-        <a href = "writing_with_face.html">
-            <section class = "cover">
-                <img src="./images/writing with face.jpg" alt="">
-                <div class = "titleWrapper"></div>
-                <div class = "inBlockTitle">Writing With Face</div>
-                <div class = "top-left">April 2023</div>
-                <div class = "top-right">&#9673</div>
-                <div class = "bottom-right">Liming Chen</div>
-                
-            </section>
-        </a>
-        <a href = "readingAids.html">
-            <section class = "cover">
-                <img src="./images/cover_crowdsourcing.png" alt="">
-                <div class = "titleWrapper"></div>
-                <div class = "inBlockTitle">Crowdsourcing Reading Aids for Narrative Text</div>
-                <div class = "top-left">April 2023</div>
-                <div class = "top-right">&#9673</div>
-                <div class = "bottom-right">Liming Chen, Yuchen Wang, Jinhan Wu</div>
-                
-            </section>
-        </a>
-    </section>
-
-
-     <!--second row of portfolio-->
-    <section class="projectPhotos">
-        <a href = "sound_trees.html">
-            <section class = "cover">
-                <img src="./images/sound_trees_1.png" alt="">
-                <div class = "titleWrapper"></div>
-                <div class = "inBlockTitle">Sound Trees</div>
-                <div class = "top-left">April 2023</div>
-                <div class = "top-right">&#9673</div>
-                <div class = "bottom-right">Liming Chen</div>
-                
-                
-            </section>
-        </a>
-        <a href = "videoFrame.html">
-            <section class = "cover">
-                <img src="./images/videoFrameInterpolation.png" alt="">
-                <div class = "titleWrapper"></div>
-                <div class = "inBlockTitle">Video Frame Interpolation and Super Resolution Using Conditional GAN and Autoencoders</div>
-                <div class = "top-left">April 2023</div>
-                <div class = "top-right">&#9673</div>
-                <div class = "bottom-right">Liming Chen, Benjamin Rapkin, Xuhang Cao</div>
-                
-            </section>
-        </a>
-        <a href = "index.html">
-            <section class = "cover">
-                <img src="./images/story_archive1.png" alt="">
-                <div class = "titleWrapper"></div>
-                <div class = "inBlockTitle">story_book</div>
-                <div class = "top-left">April 2023</div>
-                <div class = "top-right">&#9673</div>
-                <div class = "bottom-right">Liming Chen</div>
-            </section>
-        </a>
-    </section>
-    
-    <br>
-    <hr class = "mainSeperater">
-    <br>
-
-
 </body>
+
 </html>
