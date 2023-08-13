@@ -8,7 +8,7 @@ let colorList = ["8785b2", "aab16c"];
 let indicator;
 function setup(){
     var width = windowWidth;
-    var height = windowHeight*3/8;
+    var height = windowHeight/3;
     var cnv = createCanvas(width, height);
     cnv.parent('sketch-holder');
     background(255);
@@ -98,6 +98,8 @@ function mountains(){
     drawMountain(100, 30);
     drawMountain(120, 50);
     drawMountain(140, 100);
+    drawMountain(190, 120);
+    drawMountain(225, 140);
 }
 function drawMountain(greyValue, heightOffset){
     mountainGraphic.fill(greyValue);
